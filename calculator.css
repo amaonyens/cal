@@ -136,26 +136,8 @@ input{
 }
 
 
-/* @media screen and (max-width: 400px) {
-    body{
-        background-color: yellow;
-    }
-}
 
-@media screen and (min-width: 410px) {
-    body{
-        background-color: rgb(255, 0, 179);
-    }
-}*/
-
-/* @media screen and (max-width: 1200px) {
-    body{
-        background-color: rgb(0, 170, 255);
-    }
-}  */
-
-
-@media (min-width: 320px) and (max-width: 400px){
+@media (min-width: 220px) and (max-width: 400px){
     body{
         display: flex;
         flex-direction: column;
@@ -223,6 +205,8 @@ input{
         margin-top: auto;
     }
 }
+
+
 
 @media (min-width: 765px) and (max-width: 2559px){
     body{
@@ -342,7 +326,7 @@ input{
     }
 
     .tips{
-        height: 55px;
+        height: 80px;
         align-items: stretch;
         
     }
@@ -378,4 +362,10 @@ input{
         height: 80px;
         align-items: center;
     }
+
+    .word{
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
 }
