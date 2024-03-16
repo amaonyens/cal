@@ -180,11 +180,7 @@ input{
         justify-content: center;
     }
 
-    .tips{
-        height: 55px;
-        align-items: stretch;
-        
-    }
+    
 
     .result{
         margin-left: auto;
@@ -252,12 +248,7 @@ input{
         margin-left: auto;
     }
 
-    .tips{
-        height: 55px;
-        align-items: stretch;
-        
-    }
-
+   
     .result{
         margin-left: auto;
         width: 50%;
@@ -283,7 +274,8 @@ input{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 50%;
+        margin: auto;
     }
 
     input{
@@ -316,7 +308,7 @@ input{
     .tip{
         grid-template-columns: 50% 50% 50%;
         row-gap: 1.2rem;
-        column-gap: 50px;
+        column-gap: 30px;
         margin-bottom: 3.2rem;
         justify-content: center;
         align-items: stretch;
@@ -325,11 +317,7 @@ input{
         
     }
 
-    .tips{
-        height: 80px;
-        align-items: stretch;
-        
-    }
+    
 
     .peoplelabel{
         margin-top: 50px;
