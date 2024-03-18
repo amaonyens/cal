@@ -15,26 +15,26 @@ tipCustom.addEventListener("input",tipInputFun);
 resetBtn.addEventListener("click", reset);
 
 billInput.value = "0";
-peopleInput.value = "1";
-tipPerPerson.innerHTML = "$" + (0.0).toFixed(2);
-totalPerPerson.innerHTML = "$" + (0.0).toFixed(2);
+peopleInput.value = "1"
+tipPerPerson.innerHTML = "$ 0.00";
+totalPerPerson.innerHTML = "$ 0.00";
 
 let billValue = 0.0;
 let peopleValue = 1;
 let tipValue = 0.15;
 
 function billInputFun() {
-    billValue = parseFloat(billInput.value);
+    billValue = parseFloat(billInput.value || "0.0");
     calculateTip()
 }
 
 function peopleInputFun(){
-    peopleValue = parseFloat(peopleInput.value);
+    peopleValue = parseFloat(peopleInput.value || "0.0");
     calculateTip()
 }
 
 function tipInputFun(){
-    tipValue = parseFloat(tipCustom.value / 100);
+    tipValue = parseFloat(tipCustom.value || "0.0") / 100;
 
     tips.forEach(function(val){
         val.classList.remove("active-tip");
@@ -56,11 +56,11 @@ function handleClick(event){
 
 function calculateTip() {
     if (peopleValue >= 1) {
-        let tipAmount = (billValue * tipValue);
-        let total = (tipAmount) * peopleValue;
+        const tipAmount = (billValue * tipValue);
+        const total = (tipAmount) * peopleValue;
         tipPerPerson.innerHTML = "$" + tipAmount.toFixed(2);
         totalPerPerson.innerHTML = "$" + total.toFixed(2);
-    }
+    }  
 }
 
 function reset() {
