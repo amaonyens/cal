@@ -66,7 +66,7 @@ function calculateTip() {
 function reset() {
     billInput.value = "0";
     peopleInput.value = "1";
-    tipPerPerson.innerHTML = "$" + "0.0";
-    totalPerPerson.innerHTML = "$" + "0.0"; 
+    tipPerPerson.innerHTML = "$" + "0.00";
+    totalPerPerson.innerHTML = "$" + "0.00"; 
     tipCustom.value = "";
 }
